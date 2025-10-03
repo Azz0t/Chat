@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tableau accessible - Chats.com</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Tableau accessible des races de chats</h1>
+    <nav>
+      <a href="index.html">Retour à l'accueil</a>
+    </nav>
+  </header>
+
+  <main id="main-content" role="main">
+    <section aria-labelledby="accessible-table-title">
+      <h2 id="accessible-table-title">Caractéristiques comparées des races de chats</h2>
+
+      <p>
+        Ce tableau est entièrement accessible au clavier et aux lecteurs d’écran.
+        Vous pouvez naviguer entre toutes les cellules avec la touche <kbd>Tab</kbd>.
+      </p>
+
+      <table id="accessible-cats-table" border="1">
+        <caption>Comparatif des races Munchkin, British Shorthair et Maine Coon</caption>
+        <thead>
+          <tr>
+            <th scope="col">Critère</th>
+            <th scope="col">Munchkin (pattes courtes)</th>
+            <th scope="col">British Shorthair</th>
+            <th scope="col">Maine Coon</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Espérance de vie</th>
+            <td tabindex="0">12–15 ans</td>
+            <td tabindex="0">12–18 ans</td>
+            <td tabindex="0">12–15 ans</td>
+          </tr>
+          <tr>
+            <th scope="row">Santé</th>
+            <td tabindex="0">Risques orthopédiques modérés (rachis, pattes)</td>
+            <td tabindex="0">Robuste, vigilance poids / cœur</td>
+            <td tabindex="0">HCM possible, dépistage recommandé</td>
+          </tr>
+          <tr>
+            <th scope="row">Sécurité</th>
+            <td tabindex="0">Mobilité réduite → vigilance hauteurs</td>
+            <td tabindex="0">Calme, peu fugueur</td>
+            <td tabindex="0">Grand gabarit, vigilance chutes/extérieur</td>
+          </tr>
+          <tr>
+            <th scope="row">Stimulation / activité</th>
+            <td tabindex="0">Jeux doux, puzzle-feeders</td>
+            <td tabindex="0">Activité modérée, jeu quotidien</td>
+            <td tabindex="0">Très joueur, besoin d’arbres hauts</td>
+          </tr>
+          <tr>
+            <th scope="row">Coût</th>
+            <td tabindex="0">800–1 500 €</td>
+            <td tabindex="0">1 000–2 000 €</td>
+            <td tabindex="0">1 200–2 500 €</td>
+          </tr>
+          <tr>
+            <th scope="row">Interaction humaine</th>
+            <td tabindex="0">Très proche, affectueux</td>
+            <td tabindex="0">Indépendant mais câlin</td>
+            <td tabindex="0">Sociable, “chat-chien”</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p>
+        <a href="index.html">Retour à la page principale</a>
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Chats.com - Tous droits réservés</p>
+  </footer>
+</body>
+</html>
