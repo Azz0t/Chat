@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bytesized&family=Cairo:wght@200..1000&family=Iceland&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Matemasie&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="/img/image.png" type="image/png" />
+    <title>Surveille ton territoire</title>
+    <meta
+      name="description"
+      content="Découvrez un site dédié aux chats, avec des informations, vidéos et contenus accessibles sur les races de chats, leurs particularités et leur rareté."
+    />
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+
+  <body>
+    <!-- Lien de saut au contenu -->
+    <a class="skip-link" href="#main-content">Passer au contenu</a>
+
+    <!-- Header + Navigation -->
+    <header>
+      <div class="navwrap" role="banner">
+        <div class="brand">
+          <a
+            href="/index.html"
+            class="top-link"
+            aria-label="Retour à la page d’accueil"
+            >Chats.com</a
+          >
+        </div>
+
+        <!-- Bouton hamburger mobile -->
+        <button
+          class="menu-toggle"
+          aria-controls="main-menu"
+          aria-expanded="false"
+        >
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="sr-only">Menu</span>
+        </button>
+
+        <nav role="navigation" aria-label="Menu principal">
+          <ul id="main-menu" class="menubar" role="menubar">
+            <li role="none">
+              <button
+                class="menu-button"
+                aria-haspopup="true"
+                aria-expanded="false"
+                aria-controls="submenu-services"
+                id="btn-services"
+              >
+                <span class="menu-text">Nos services félins</span>
+                <span class="chev" aria-hidden="true">▾</span>
+              </button>
+              <div
+                class="submenu"
+                role="menu"
+                id="submenu-services"
+                aria-labelledby="btn-services"
+                hidden
+              >
+                <a role="menuitem" href="/services/audit.html" tabindex="-1"
+                  >Surveille ton territoire</a
+                >
+                <a role="menuitem" href="/services/conseil.html" tabindex="-1"
+                  >Conseils de chat
+                </a>
+                <a role="menuitem" href="/services/formation.html" tabindex="-1"
+                  >Cours pour chatons</a
+                >
+              </div>
+            </li>
+
+            <li role="none">
+              <button
+                class="menu-button"
+                aria-haspopup="true"
+                aria-expanded="false"
+                aria-controls="submenu-ressources"
+                id="btn-ressources"
+              >
+                <span class="menu-text">Trésors du chat</span>
+                <span class="chev" aria-hidden="true">▾</span>
+              </button>
+              <div
+                class="submenu"
+                role="menu"
+                id="submenu-ressources"
+                aria-labelledby="btn-ressources"
+                hidden
+              >
+                <a
+                  role="menuitem"
+                  href="/tresors-du-chat/wcag.html"
+                  tabindex="-1"
+                  >Griffes et règles</a
+                >
+                <a
+                  role="menuitem"
+                  href="/tresors-du-chat/outils.html"
+                  tabindex="-1"
+                  >Jouets et accessoires</a
+                >
+                <a
+                  role="menuitem"
+                  href="/tresors-du-chat/checklist.html"
+                  tabindex="-1"
+                  >Liste du chat exigeant</a
+                >
+              </div>
+            </li>
+
+            <li role="none">
+              <a
+                class="top-link"
+                role="menuitem"
+                href="/contact.html"
+                tabindex="0"
+                >Contact</a
+              >
+            </li>
+
+            <li role="none" class="menu-search">
+              <form role="search" aria-label="Recherche sur le site">
+                <label for="site-search" class="sr-only">Recherche</label>
+                <input
+                  type="search"
+                  id="site-search"
+                  name="q"
+                  placeholder="Rechercher..."
+                  aria-placeholder="Rechercher"
+                />
+                <button type="submit">
+                  <img
+                    src="/img/magnifying-glass-solid-full.svg"
+                    alt="Rechercher"
+                  />
+                </button>
+              </form>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main-content" tabindex="-1">
+      <!-- Fil d’Ariane -->
+      <nav class="breadcrumb wrap" aria-label="Fil d’ariane">
+        <ol>
+          <li><a href="/">Accueil</a></li>
+          <li><span class="crumb-label">Nos services félins</span></li>
+          <li aria-current="page">Surveille ton territoire</li>
+        </ol>
+      </nav>
+      
+            <section class="wrap" aria-labelledby="h1">
+        <h1 id="h1">Surveille ton territoire</h1>
+        <p>
+          Nous auditons ton logement (appartement, maison, jardin) pour
+          <strong>sécuriser</strong> les zones sensibles, <strong>prévenir les fugues</strong> et
+          <strong>enrichir</strong> le territoire (points en hauteur, parcours, jeux, repos).
+          Tu repars avec un <em>plan d’action clair</em> et priorisé.
+        </p>
+
+        <!-- Image informative (décrite) -->
+        <figure class="figure">
+          <img
+            src="https://images.unsplash.com/photo-1759597680429-3a47c56cbf19?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1074"
+            width="800"
+            height="450"
+            alt="Les chats se reposent dans un espace aménagé pour eux."
+          />
+          <figcaption>
+            Un poste d’observation sécurisé + un griffoir proche = territoire serein.
+          </figcaption>
+        </figure>
+      </section>
+
+      <!-- Objectifs -->
+      <section class="wrap" aria-labelledby="obj">
+        <h2 id="obj">Objectifs de l’audit</h2>
+        <ul>
+          <li>Cartographier les <strong>ressources</strong> : eau, nourriture, litières, repos, jeu.</li>
+          <li>Évaluer la <strong>sécurité</strong> : fenêtres/balcons, plantes toxiques, câbles, produits.</li>
+          <li>Optimiser l’<strong>enrichissement</strong> : perchoirs, cachettes, parcours, griffoirs.</li>
+          <li>Limiter les <strong>conflits inter-chats</strong> (si foyer multi-félins).</li>
+          <li>Fournir un <strong>plan d’action</strong> simple, budgété et priorisé.</li>
+        </ul>
+      </section>
+
+      <!-- Déroulé -->
+      <section class="wrap" aria-labelledby="deroule">
+        <h2 id="deroule">Comment ça se passe ?</h2>
+        <ol>
+          <li><strong>Appel découverte</strong> (15 min) : besoins, contexte, photos/plan rapide.</li>
+          <li><strong>Visite ou visio</strong> (60–90 min) : repérage, habitudes du chat, risques.</li>
+          <li><strong>Plan personnalisé</strong> : check-list, schéma d’implantation, priorités.</li>
+          <li><strong>Suivi</strong> (2 semaines) : ajustements par mail/visio courte.</li>
+        </ol>
+        <aside class="note" role="note">
+          Astuce : sépare immédiatement les ressources (eau loin des croquettes, plusieurs bacs, repos en hauteur) — les bénéfices se voient vite.
+        </aside>
+      </section>
+
+      <!-- Forfaits -->
+      <section class="wrap" aria-labelledby="packs">
+        <h2 id="packs">Forfaits</h2>
+        <p class="sr-only">Liste des forfaits et leurs descriptions.</p>
+        <dl>
+          <dt><strong>Essentiel</strong> — 59&nbsp;€</dt>
+          <dd>Questionnaire + visio 45&nbsp;min + mini-plan (1 page) avec 5 actions clés.</dd>
+
+          <dt><strong>Confort</strong> — 119&nbsp;€</dt>
+          <dd>Visite/visio 90&nbsp;min + plan détaillé (3–4 pages) + suivi 2&nbsp;semaines.</dd>
+
+          <dt><strong>Multi-chats</strong> — 169&nbsp;€</dt>
+          <dd>Audit complet pour foyer multi-félins, protocole d’introduction/gestion des tensions.</dd>
+        </dl>
+      </section>
+
+      <!-- FAQ -->
+      <section class="wrap" aria-labelledby="faq">
+        <h2 id="faq">FAQ rapide</h2>
+        <details>
+          <summary>Je vis en appartement : c’est utile ?</summary>
+          <p>Oui. On optimise les hauteurs, la vue, les parcours et le jeu pour éviter ennui et stress.</p>
+        </details>
+        <details>
+          <summary>Et si mon chat sort au jardin ?</summary>
+          <p>On vérifie clôtures et points à risque, et on crée des zones d’observation sûres.</p>
+        </details>
+        <details>
+          <summary>Matériel obligatoire ?</summary>
+          <p>Non. On privilégie ce que tu as déjà ; quelques ajouts simples suffisent souvent.</p>
+        </details>
+      </section>
+
+      <!-- Plan du site -->
+      <section class="wrap" aria-labelledby="plan">
+        <h2 id="plan">Plan du site</h2>
+        <ul>
+          <li><a href="/index.html">Accueil</a></li>
+          <li><a href="/mentions-legales.html">Mentions légales</a></li>
+          <li><a href="/rgpd.html">Politique de confidentialité (RGPD)</a></li>
+          <li><a href="/accessibilite.html">Accessibilité</a></li>
+          <li><a href="/contact.html">Contact</a></li>
+        </ul>
+      </section>
+    </main>
+
+    <!---| Footer |-->
+    <footer role="contentinfo" class="footer">
+      <div class="footer__container">
+        <div class="footer__links">
+          <a href="/plan.html" class="footer__link">Plan du site</a>
+
+          <a href="/legal/mentions-legales.html" class="footer__link"
+            >Mentions légales</a
+          >
+          <a href="/legal/rgpd.html" class="footer__link"
+            >Politique de confidentialité</a
+          >
+          <a href="/legal/accessibilite.html" class="footer__link"
+            >Accessibilité</a
+          >
+          <a href="/contact.html" class="footer__link">Contact</a>
+        </div>
+        <div class="footer__social">
+          <a
+            href="https://www.facebook.com"
+            class="footer__social-link"
+            aria-label="Facebook"
+          >
+            <img
+              src="/img/social/square-facebook-brands-solid-full.svg"
+              alt=""
+            />
+          </a>
+          <a
+            href="https://www.twitter.com"
+            class="footer__social-link"
+            aria-label="Twitter"
+          >
+            <img
+              src="/img/social/square-twitter-brands-solid-full.svg"
+              alt=""
+            />
+          </a>
+          <a
+            href="https://www.linkedin.com"
+            class="footer__social-link"
+            aria-label="LinkedIn"
+          >
+            <img src="/img/social/linkedin-brands-solid-full.svg" alt="" />
+          </a>
+        </div>
+        <p class="footer__copyright">
+          © 2025 Chats.com - Tous droits sont réservés.
+        </p>
+      </div>
+    </footer>
+
+    <script src="/script.js" defer></script>
+  </body>
+</html>
